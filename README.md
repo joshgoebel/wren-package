@@ -20,7 +20,6 @@ Dirt simple package management/dependencies for [Wren Console](https://github.co
 
 ```js
 import "wren-package/package" for WrenPackage, Depencency
-import "os" for Process
 
 class Package is WrenPackage {
   construct new() {}
