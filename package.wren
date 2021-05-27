@@ -8,7 +8,7 @@ class Color {
   static RESET { "\u001b[0m" }
 }
 
-class Depencency {
+class Dependency {
   construct new(name, version, source) {
     _name = name
     _version = version
