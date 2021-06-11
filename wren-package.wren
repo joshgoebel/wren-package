@@ -43,6 +43,10 @@ class Runner {
   }
 }
 
+var ShowVersion = Fn.new() {
+  System.print("wren-package v0.2.0")
+}
+
 class WrenPackage {
   construct new() {}
   dependencies() {}
@@ -54,7 +58,9 @@ class WrenPackage {
     }
   }
   default() {
-    if (Process.arguments.toString == "[install]") {
+    if (["[-v]","[--version]"].contains(Process.arguments.toString)) {
+      ShowVersion.call()
+    } else if (Process.arguments.toString == "[install]") {
       install()
     } else {
       System.print("Usage:\n./package.wren install\n")

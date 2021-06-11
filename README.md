@@ -19,7 +19,7 @@ Dirt simple package management/dependencies for [Wren Console](https://github.co
 ### What it looks like
 
 ```js
-import "wren-package/package" for WrenPackage, Dependency
+import "wren-package" for WrenPackage, Dependency
 
 class Package is WrenPackage {
   construct new() {}
