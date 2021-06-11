@@ -6,7 +6,6 @@
 
 ![MIT licensed](https://badgen.net/badge/license/MIT/cyan?scale=1.2)
 ![wren 0.4](https://badgen.net/badge/wren/0.4/blue?scale=1.2)
-![experimental](https://badgen.net/badge/experimental/yes/red?scale=1.2)
 ![wren-console](https://badgen.net/badge/wren-console/yes/green?scale=1.2)
 ![wren-cli](https://badgen.net/badge/wren-cli/no/red?scale=1.2)
 
