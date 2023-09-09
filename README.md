@@ -25,7 +25,7 @@ class Package is WrenPackage {
   name { "wren-test-runner" }
   dependencies {
     return [
-      Depencency.new("wren-testie", "0.1.0", "https://github.com/joshgoebel/wren-testie.git")
+      Dependency.new("wren-testie", "0.1.0", "https://github.com/joshgoebel/wren-testie.git")
     ]
   }
 }
