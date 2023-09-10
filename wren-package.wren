@@ -79,7 +79,7 @@ class WrenPackage {
         // var args = ["clone","-q","-b", dep.version,dep.source, "wren_modules/%(dep.name)"]
         var run=Runner.new()
         // Pull a shallow clone of the dependency
-        run.add("git", ["clone", "-q", "--depth", "1", "--detach", dep.version,dep.source, "wren_modules/%(dep.name)"])
+        run.add("git", ["clone", "-q", "--depth", "1", "--branch", dep.version, dep.source, "wren_modules/%(dep.name)"])
         var f = Fiber.new { run.go() }
         f.try()
         if (f.error != null) {
